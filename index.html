@@ -10,36 +10,35 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
 
-<header class="header">
-    <div class="header__container container ">
-    <a href="./index.html" class="logo">Web<span class="logo__studio">Studio</span></a>
-    
-    <nav class="header-nav">
-    <ul class="header__list">
-        <li class="header-item"><a href="" class="header__link-nav header__link-nav--active">Студия</a></li>
-        <li class="header-item"><a href="./portfolio.html" class="header__link-nav">Портфолио</a></li>
-        <li class="header-item"><a href="#" class="header__link-nav">Контакты</a></li>
+<header>
+    <div class="container main">
+   <a href="./index.html" class="logo">Web<span class="logo-studio">Studio</span></a>
+    <nav>
+    <ul class="site-nav list">
+        <li class="item"><a href="" class="link menu-link current">Студия</a></li>
+        <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+        <li class="item"><a href="#" class="link">Контакты</a></li>
     </ul>
     </nav>
    
-<ul class="header__container-links">
-    <li class="header__items"> 
-        <a href="mailto:info@devstudio.com" class="header__link"> 
-        <svg class="header__icon" width="16" height="12">
+<ul class="auth list">
+    <li class="contact-link"> 
+        <a href="mailto:info@devstudio.com" class="link"> 
+        <svg class="contact-icon" width="16" height="12">
             <use href="./images/icons.svg#icon-envelope"></use>
         </svg>
         info@devstudio.com
     </a>
     </li>
 
-    <li class="header__items">
-        <a href="tel:+380961111111" class="header__link">
-            <svg class="header__icon" width="10" height="16">
+    <li class="contact-link">
+        <a href="tel:+380961111111" class="link">
+            <svg class="contact-icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-phone"></use>
             </svg>
             +38 096 111 11 11
@@ -51,8 +50,8 @@
 
 <main>
     <!-- Герой -->
-    <section class="hero">
-        <h1 class="hero__title" >Эффективные решения <br />для вашего бизнеса</h1>
+    <section class="hero overlay">
+        <h1 class="hero-title" >Эффективные решения <br />для вашего бизнеса</h1>
         <button data-modal-open type="button" class="button">Заказать услугу</button> 
     </section >
      
