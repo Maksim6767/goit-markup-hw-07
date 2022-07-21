@@ -48,18 +48,42 @@
 //    background-color:var(--secondary-bg-color);
 // }
 
+.main-section-service {
+   background: #2F303A;
+   text-align: center;
+   padding-top: 200px;
+   padding-bottom: 200px;
+   max-width: 1600px;
+   margin-left: auto;
+   margin-right: auto;
+   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/Img-fon.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+
 .hero {
    margin-bottom: 0;
    padding-top: 200px;
    padding-bottom: 200px;
    text-align: center;
-   background-color: var(--secondary-bg-color);
+   background-color: $secondary-bg-color;
+   max-width: 1600px;
+   height: 600px;
+   margin-left: auto;
+   margin-right: auto;
+   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+         url("../images/hero.jpg") center/cover;
+   background-size: cover;
+   background-position: center;
 }
 
-.hero__title {
+.hero-title {
    margin-top: 0;
    margin-bottom: 30px;
-   color: var(--accent-text-color);
+   color: $accent-text-color;
    font-weight: 900;
    font-size: 44px;
    line-height: 1.36;
@@ -67,25 +91,12 @@
    text-transform: uppercase;
 }
 
-/* Фон на весь блок Герой */
-.overlay {
-   max-width: 1600px;
-   height: 600px;
-   margin-left: auto;
-   margin-right: auto;
-   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url("../images/hero.jpg") center/cover;
-   background-size: cover;
-   background-position: center;
-}
-
-/* Button */
-.button {
+.button-hero {
    border-radius: 4px;
    padding: 10px 32px;
    min-width: 200px;
-   color: var(--accent-text-color);
-   background-color: var(--button-bg-color);
+   color: $accent-text-color;
+   background-color: $primery-text-color;
    font-family: Roboto;
    font-weight: 700;
    font-size: 16px;
@@ -94,8 +105,12 @@
    letter-spacing: 0.06em;
    cursor: pointer;
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
+   &:hover,
+   &:focus,
+   &:active {
+         background-color: $button-bg-color;
+         color: #000;
+      }
 }
 
-.button:hover {
-   background-color: var(--secondary-bg-color);
-}
