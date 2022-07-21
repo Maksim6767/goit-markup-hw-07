@@ -110,7 +110,7 @@
    &:focus,
    &:active {
          background-color: $button-bg-color;
-         color: #000;
+         color: $accent-text-color;
       }
 }
 
