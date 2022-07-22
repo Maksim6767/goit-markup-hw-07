@@ -7,11 +7,11 @@
 
 .item-button {
     align-items: center;
-    background-color: var(--team-bg-color);
-}
-
-.item-button+.item-button {
+    background-color: &team-bg-color;
+    
+    & + & {
     margin-left: 8px;
+    }
 }
 
 .btn .color {
@@ -22,10 +22,10 @@
     padding: 6px 22px;
     text-align: center;
     border: 1px solid;
-    background-color: var(--title-text-color);
+    background-color: $title-text-color;
 
-    color: var(--title-text-color);
-    background-color: var(--portfolio-bg-color);
+    color: $title-text-color;
+    background-color: $portfolio-bg-color;
     font-family: inherit;
     font-size: 16px;
     font-weight: 500;
@@ -35,10 +35,11 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: $accent-text-color;
+    background-color: $button-bg-color;
+    }    
 }
 
-.btn .color:hover,
-.btn .color:focus {
-    color: var(--accent-text-color);
-    background-color: var(--button-bg-color);
-}
