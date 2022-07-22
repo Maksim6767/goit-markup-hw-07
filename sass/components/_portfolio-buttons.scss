@@ -7,7 +7,7 @@
 
 .item-button {
     align-items: center;
-    background-color: &team-bg-color;
+    background-color: $team-bg-color;
     
     & + & {
     margin-left: 8px;
@@ -25,7 +25,7 @@
     background-color: $title-text-color;
 
     color: $title-text-color;
-    background-color: $portfolio-bg-color;
+    background-color: $team-bg-color;
     font-family: inherit;
     font-size: 16px;
     font-weight: 500;
